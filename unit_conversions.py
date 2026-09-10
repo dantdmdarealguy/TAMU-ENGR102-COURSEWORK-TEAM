@@ -2,7 +2,7 @@
 # "Aggies do not lie, cheat, or steal, or tolerate those who do."
 # "I have not given or received any unauthorized aid on this assignment."
 #
-# Name: namith Chelikani, Kevin Shu, Vaibhav Vaidish, Jeol Castillo
+# Name: Namith Chelikani, Kevin Shu, Vaibhav Vaidish, Joel Castillo
 # Section: 469
 # Assignment: lab 01
 # Date: 8 9 2026
