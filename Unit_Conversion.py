@@ -2,10 +2,13 @@
 # "Aggies do not lie, cheat, or steal, or tolerate those who do."
 # "I have not given or received any unauthorized aid on this assignment."
 #
-# Name: namith Chelikani, 
+# Name: namith Chelikani, Kevin Shu, Vaibhav Vaidish, Jeol Castillo
 # Section: 469
-# Assignment: lab 03
-# Date: 01 9 2026
+# Assignment: lab 01
+# Date: 8 9 2026
+#
+#
+# YOUR CODE HERE
 
 x = float(input("Please enter the quantity to be converted:"))
 print(f"{x} pounds force is equivalent to{x*4.448: .3} newtons")
