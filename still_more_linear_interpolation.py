@@ -12,15 +12,15 @@
 
 import math as m
 
-t1 = float(input("Enter time 1:"))
-x1 = float(input("Enter the x position of the object at time 1:"))
-y1 = float(input("Enter the y position of the object at time 1:"))
-z1 = float(input("Enter the z position of the object at time 1:"))
+t1 = float(input("Enter time 1: "))
+x1 = float(input("Enter the x position of the object at time 1: "))
+y1 = float(input("Enter the y position of the object at time 1: "))
+z1 = float(input("Enter the z position of the object at time 1: "))
 
-t2 = float(input("Enter time 2:"))
-x2 = float(input("Enter the x position of the object at time 2:"))
-y2 = float(input("Enter the y position of the object at time 2:"))
-z2 = float(input("Enter the z position of the object at time 2:"))
+t2 = float(input("Enter time 2: "))
+x2 = float(input("Enter the x position of the object at time 2: "))
+y2 = float(input("Enter the y position of the object at time 2: "))
+z2 = float(input("Enter the z position of the object at time 2: "))
 
 times = (t2-t1)/4
 
@@ -37,8 +37,8 @@ stry2 = str(y1)
 strz2 = str(z1)
 
 
-print("at time",t1,"seconds the object is at ("+strx1+","+stry1+","+strz1+")")
-print("at time",t1+times,"seconds the object is at ("+interp(t1+times,x1,x2)+","+interp(t1+times,y1,y2)+","+interp(t1+times,z1,z2)+")")
-print("at time",t1+(2*times),"seconds the object is at ("+interp(t1+(2*times),x1,x2)+","+interp(t1+times,y1,y2)+","+interp(t1+times,z1,z2)+")")
-print("at time",t1+(3*times),"seconds the object is at ("+interp(t1+(3*times),x1,x2)+","+interp(t1+times,y1,y2)+","+interp(t1+times,z1,z2)+")")
-print("at time",t2,"seconds the object is at ("+strx2+","+stry2+","+strz2+")")
+print("\nAt time",t1,"seconds the object is at ("+strx1+","+stry1+","+strz1+")")
+print("At time",t1+times,"seconds the object is at ("+interp(t1+times,x1,x2)+","+interp(t1+times,y1,y2)+","+interp(t1+times,z1,z2)+")")
+print("At time",t1+(2*times),"seconds the object is at ("+interp(t1+(2*times),x1,x2)+","+interp(t1+times,y1,y2)+","+interp(t1+times,z1,z2)+")")
+print("At time",t1+(3*times),"seconds the object is at ("+interp(t1+(3*times),x1,x2)+","+interp(t1+times,y1,y2)+","+interp(t1+times,z1,z2)+")")
+print("At time",t2,"seconds the object is at ("+strx2+","+stry2+","+strz2+")")
