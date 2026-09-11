@@ -24,9 +24,8 @@ z2 = float(input("Enter the z position of the object at time 2: "))
 
 times = (t2-t1)/4
 
-def interp(time,pos1, pos2):
-    point = str((time - t1)*((pos2-pos1)/(t2-t1))+x1)
-    return(point)
+def interp(time, pos1, pos2):
+    return (time - t1) * ((pos2 - pos1) / (t2 - t1)) + pos1
 
 strx1 = float(x1)
 stry1 = float(y1)
@@ -37,8 +36,12 @@ stry2 = float(y1)
 strz2 = float(z1)
 
 
-print(f"\nAt time {t1:.2f} seconds the object is at, ({strx1:.3f}, {stry1:.3f}, {strz1:.3f})")
-print("\nat time",t1+times,"seconds the object is at ("+interp(t1+times,x1,x2)+","+interp(t1+times,y1,y2)+","+interp(t1+times,z1,z2)+")")
-print("\nat time",t1+(2*times),"seconds the object is at ("+interp(t1+(2*times),x1,x2)+","+interp(t1+times,y1,y2)+","+interp(t1+times,z1,z2)+")")
-print("\nat time",t1+(3*times),"seconds the object is at ("+interp(t1+(3*times),x1,x2)+","+interp(t1+times,y1,y2)+","+interp(t1+times,z1,z2)+")")
-print(f"\nat time {t1} seconds the object is at ({strx2:.3f}, {stry2:.3f}, {strz2:.3f})")
+print(f"\nAt time {t1:.2f} seconds the object is at ({strx1:.3f}, {stry1:.3f}, {strz1:.3f})")
+
+print(f"At time {t1+times:.2f} seconds the object is at ({interp(t1+times,x1,x2):.3f}, {interp(t1+times,y1,y2):.3f}, {interp(t1+times,z1,z2):.3f})")
+
+print(f"At time {t1+2*times:.2f} seconds the object is at ({interp(t1+(2*times),x1,x2):.3f}, {interp(t1+(2*times),y1,y2):.3f}, {interp(t1+(2*times),z1,z2):.3f})")
+
+print(f"At time {t1+3*times:.2f} seconds the object is at ({+interp(t1+(3*times),x1,x2):.3f}, {interp(t1+(3*times),y1,y2):.3f}, {interp(t1+(3*times),z1,z2):.3f})")
+
+print(f"At time {t2:.2f} seconds the object is at ({x2:.3f}, {y2:.3f}, {z2:.3f})")
