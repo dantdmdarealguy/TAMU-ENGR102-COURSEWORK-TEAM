@@ -35,7 +35,7 @@ z = x * 3 * x
 print(f"z = x * 3 * x = {z}")
 
 ############ Part B ############
-TOL = 1e-6
+TOL = 1e-10
 if abs(b - f) < TOL:
     print(f"b and f are equal within tolerance of {TOL}")
 else:
