@@ -1,0 +1,24 @@
+# By submitting this assignment, I agree to the following:
+# Aggies do not lie, cheat, or steal, or tolerate those who do.
+# I have not given or received any unauthorized aid on this assignment.
+# 
+# Names: Joel Castillo, Kevin Shu, Vaibhav Vaidish, Namith Chelikani
+# Section: 469, 569
+# Assignment: LAB Topic 6 Team
+# Date: 30 September 2026
+# 
+# 
+# Get the input from the user: cannot be negative, and if 0 output should be 0
+side = float(input("Enter the side length in meters: "))
+layers = float(input("Enter the number of layers: "))
+# Calculate the surface area of all 4 sides of the pyramid as well as the surface area of the top of the pyramid
+if (layers < 0) or (side < 0):
+    print("Error! Input cannot be negative!") # ensures the user can not enter a positive number by returning an error message
+elif (layers == 0) or (side == 0):
+    print("You need 0 m^2 of gold foil to cover the pyramid") 
+else:
+    sur_top = layers * layers
+    sur_sides = 4 * ((layers * (layers + 1)) / 2)
+    area = (sur_top + sur_sides) * (side**2)
+    print(f"You need {area:.2f} m^2 of gold foil to cover the pyramid")
+    # Prints the total calculated area of the pyramid 
