@@ -32,16 +32,16 @@ while stop == False:
     y = int(input("Input a Y coordinate 0-8 "))
 
     if(y == 9):
-        stop == True
+        stop = True
         break
 
-    if( x > 9 or y > 9):
-        print("Number out of range")
+    if(x < 0 or x > 8 or y < 0 or y > 8):
+      print("Number out of range")
     else:
     
         #placing on board
 
-        if(board[x][y] != "."):
+        if(board[y][x] != "."):
             print("That space is occupied try again")
         else:
             if(turn %2 == 1):
@@ -50,7 +50,7 @@ while stop == False:
                     board[y][x] = chr(9675)
 
             for i in board:
-                    print(i)
+                print("".join(i))
             turn += 1
 
 
