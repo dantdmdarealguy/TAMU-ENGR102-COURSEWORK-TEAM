@@ -38,7 +38,4 @@ pref_char = input("Enter your preferred character: ")
 if pref_char not in "abcdeghkmnopqrsuvwxyz@$&*=" and pref_char != " ":
     while pref_char not in "abcdeghkmnopqrsuvwxyz@$&*=":
         pref_char = input("Character not permitted! Try again: ")
-else:
-    if pref_char == " ":
-        if len(user_time) == 3 and user_time[0] > 12:
-        pref_char = 
+# Now we need to determine the pref char if the user entered a space
