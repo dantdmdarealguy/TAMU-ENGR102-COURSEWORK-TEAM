@@ -220,6 +220,9 @@ def rockpaperscissors():
             print(f"It's a tie! Computer chose: {computer_word}")
             print(f"current score: You {score}, Computer {computerscore}")
             print("")
+        if user_choice not in ["rock","paper","scissors"]:
+            print("Invalid choice.")
+            continue
         elif (user_choice == choices[1] and computer_word == choices[3]) or (user_choice == choices[2] and computer_word == choices[1]) or (user_choice == choices[3] and computer_word == choices[2]):
             print("")
             print(f"You win! Computer chose: {computer_word}")
@@ -293,10 +296,35 @@ def gameplayloop():
         choice = input("Enter your choice: ")
 
         if choice == "w":
+            print("Wordle")
+            print("")
+            print("Guess any 5 letter word")
+            print("letters that are in the right place will be green")
+            print("letters that are in the word but in the wrong place will be yellow")
+            print("letters that are not in the word will be gray")
+            print("if you can't guess the word in 6 tries you lose")
+            print("to leave the game type exit")
+            print("")
             wordlegame()
         elif choice == "r":
+            print("Rock paper scissors")
+            print("")
+            print("Make your choice of rock, paper, or scissors and the computer will make its choice")
+            print("rock beats scissors but loses to paper")
+            print("scissors beats paper but loses to rock")
+            print("paper beats rock but loses to scissors")
+            print("to leave the game type exit")
+            print("")
             rockpaperscissors()
         elif choice == "c":
+            print("Connections")
+            print("")
+            print("Try to make catagories of 4 with 1 thing in common")
+            print("Items in your guess should be seperated by commas")
+            print("type hint to get a hint")
+            print("if you use up all 4 mistakes you lose")
+            print("to leave the game type exit")
+            print("")
             play()
         elif choice == "end":
             break
