@@ -1,4 +1,12 @@
-
+# By submitting this assignment, I agree to the following:
+# Aggies do not lie, cheat, or steal, or tolerate those who do.
+# I have not given or received any unauthorized aid on this assignment.
+#
+# Names: Joel Castillo, Kevin Shu, Vaibhav Vaidish, Namith Chelikani
+# Section: 469, 569
+# Assignment: Final Project
+# Date: 19/11/2026
+#
 
 
 import random
